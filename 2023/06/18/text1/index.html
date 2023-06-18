@@ -20,14 +20,14 @@
   <meta name="author" content="John Doe">
   
   <!--Open Graph Title-->
-  <meta property="og:title" content="Hexo" />
+  <meta property="og:title" content="text1" />
   <!--Open Graph Description-->
   <meta property="og:description" content="" />
   <!--Open Graph Site Name-->
   <meta property="og:site_name" content="Hexo" />
   <!--Type page-->
   
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="article" />
   
   <!--Page Cover-->
   
@@ -36,7 +36,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <!-- Title -->
   
-  <title>Hexo</title>
+  <title>text1 - Hexo</title>
   <!-- 添加到主屏后的标题（iOS 6 新增） -->
   <meta name="apple-mobile-web-app-title" content="Hexo">
   <!-- 是否启用 WebApp 全屏模式 -->
@@ -152,11 +152,28 @@
   
   
   
+  
+  
   <!-- Google Search Advanced
   https://developers.google.com/search/docs/advanced/structured-data/search-gallery
   -->
   
   
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NewsArticle",
+      "headline": "text1",
+      "image": "",
+      "datePublished": "Sun Jun 18 2023 00:23:59 GMT+0800",
+      "author": [{
+        "@type": "Person",
+        "name": "John Doe",
+        "url": "http://example.com"
+      }]
+    }
+  </script>
   
   
   
@@ -208,33 +225,22 @@
     
   </a>
   
-  <!--只在 **非文章** 页面显示-->
-  
-  <a class="itp-float-bar-item rounded" href="/archives/" title="归档">
+  <!--只在 **文章** 页面显示-->
+  <a class="itp-float-bar-item rounded" onclick="scrollto(comment)" title="comment">
     
-    <iconpark-icon class="navicon" name="inbox"></iconpark-icon>
-    
-  </a>
-  
-  <a class="itp-float-bar-item rounded" href="/gallery/" title="影像">
-    
-    <iconpark-icon class="navicon" name="gallery"></iconpark-icon>
+    <iconpark-icon class="navicon" name="comment"></iconpark-icon>
     
   </a>
-  
-  <a class="itp-float-bar-item rounded" href="/about/" title="关于">
+  <a class="itp-float-bar-item rounded" id="open_toc" onclick="OpenToc()" title="Table of contents">
     
-    <iconpark-icon class="navicon" name="person"></iconpark-icon>
-    
-  </a>
-  
-  <a class="itp-float-bar-item rounded" href="/links/" title="链接">
-    
-    <iconpark-icon class="navicon" name="people"></iconpark-icon>
+    <iconpark-icon class="navicon" name="list"></iconpark-icon>
     
   </a>
-  
-  
+  <a class="itp-float-bar-item rounded" href="javascript:scroll(0,0)" title="to top">
+    
+    <iconpark-icon class="navicon" name="top"></iconpark-icon>
+    
+  </a>
   
 
   <div class="itp-float-layer itp-toc-layer">
@@ -259,139 +265,141 @@
 </style>
   <!-- Main Content -->
   
-<!--Cover-->
+
 <section class="pjax-area">
-  <div class="itp-m3-card top-cover content-area">
-    <div class="itp-m3-card-cover">
-      <div class="itp-m3-cover-bg" style="
-              background-image: url();
-              background-size: cover;
-              background-position: center center;
-            ">
-        <div class="itp-m3-card-cover-layer ">
-          <div class="info-area pjax-area">
-            <div class="itp-m3-cover-avatar">
-              <img src="" class="nofancy" width="56px" height="56px" alt="avatar">
-            </div>
-            <div class="itp-m3-cover-title" style="opacity: 1;">
-              Hexo
-            </div>
-            <div class="itp-m3-cover-subtitle" style="opacity: 0.8;">
-              
+  <div class="content-area post-content-area">
+    <div class=" left-area"></div>
+    <div class="main-area">
+      <div class="itp-m3-card post-cover">
+        <div class="itp-m3-card-cover">
+          <div class="itp-m3-cover-bg" style="
+          background-image: url();
+          background-size: cover;
+          background-position: center center;
+        ">
+            <div class="itp-m3-card-cover-layer ">
+              <div class="info-area pjax-area">
+                <div class="itp-m3-cover-avatar">
+                  <img src="" class="nofancy">
+                </div>
+                <div class="itp-m3-cover-title" style="opacity: 1;">
+                  text1
+                </div>
+                <div class="itp-m3-cover-subtitle" style="opacity: 0.8;">
+                  
+2023-06-18
+<span> / </span>
 
 
+<span> / </span>
+20
+<style>
+  .category-link {
+    color: var(--main-black);
+  }
+
+  @media print {
+    .itp-cover-subtitle a {
+      color: var(--main-black) !important;
+    }
+  }
+
+  @media screen {
+    .itp-cover-subtitle a {
+      color: #fff !important;
+    }
+  }
+</style>
+
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-    
-    <div class="itp-m3-card-content" style="padding: 12px;">
-      
-      <a href="/gallery/" class="itp-m3-chip-bold">Gallery</a>
-      
-      <a href="/atom.xml" class="itp-m3-chip-bold">RSS Feed</a>
-      
-      <a href="/atom.xml" class="itp-m3-chip-bold">RSS Feed</a>
-      
-      <a href="/search/" class="itp-m3-chip-bold">Search</a>
-      
-      
-      
-    </div>
-    
-  </div>
-  <section id="index-post-entry">
-    <div class="itp-index-content">
-      
-      
-      
+        <div class="article">
+          <p>text<br><strong>text</strong>****<br><del>text</del><br><mark>text</mark></p>
 
-<div class="itp-m3-index-post-area">
-  
-  <div class="itp-m3-card post-entry itp-m3-card-hover">
-    
-    
-    <div class="itp-m3-post-entry-info">
-      <div class="meta">
-        2023-06-18
-      </div>
-      <div class="title">
-        <a href="/2023/06/18/text1/" title="text1">text1</a>
-      </div>
-      <div class="excerpt">
-        texttext****texttext
-
-        
-      </div>
-      <div class="category">
-        <div class="itp-m3-chip-bold-list">
-          
+        </div>
+        <div class="itp-m3-post-info_area">
+          <div class="info_area-category">
+            
+            
+          </div>
+          <div class="info_area-copyright">
+            <p>本文著作权归作者&nbspJohn Doe&nbsp所有，转载或引用请联系作者获得授权。</p>
+          </div>
         </div>
       </div>
-      <a href="/2023/06/18/text1/" class="post-entry-link" title="text1"></a>
+      
+      <div class="itp-m3-card itp-m3-post-comment_area" id="comment">
+        
+<div id="waline"></div>
+<script>
+  function startWaline() {
+    Waline.init({
+      el: '#waline',
+      serverURL: 'https://comment.tripper.press/',
+      path: '/2023/06/18/text1/',
+      dark: 'auto',
+      search: false,
+      imageUploader: false,
+      wordLimit: [5, 200],
+      emoji: [
+        'https://imgur.lzmun.com/press_assets/emojis/bili'
+      ],
+    })
+  };
+  document.addEventListener("DOMContentLoaded", startWaline);
+</script>
+<style>
+  button[title="表情包"] {
+    display: none;
+  }
+
+  .wl-panel {
+    border-radius: 3px !important;
+  }
+
+  .wl-btn {
+    border-radius: 3px !important;
+  }
+
+  .wl-power {
+    text-align: center;
+    opacity: 0.3;
+  }
+</style>
+
+      </div>
+      
+    </div>
+    <div class="right-area">
+      
+      
+
+      
     </div>
   </div>
   
+  <!--
+<div class="mdui-dialog" id="shareDialogText" style="text-align: center;">
+  <div class="itp-share-card" id="shareInfo">
+    <div class="itp-share-cover" style="background: url('');">
+      <div class="itp-share-layer">
+        <div class="itp-share-info">
+          <div class="itp-share-avatar">
+            <img src="" class="nofancy">
+          </div>
+          <div class="itp-share-title">text1</div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
-      
-      
-      
-      
-
-<div class="itp-m3-index-post-area">
-  
-  <div class="itp-m3-card post-entry itp-m3-card-hover">
-    
-    
-    <div class="itp-m3-post-entry-info">
-      <div class="meta">
-        2023-06-17
-      </div>
-      <div class="title">
-        <a href="/2023/06/17/hello-world/" title="Hello World">Hello World</a>
-      </div>
-      <div class="excerpt">
-        Welcome to Hexo! This is your very first post. Check 
-        
-      </div>
-      <div class="category">
-        <div class="itp-m3-chip-bold-list">
-          
-        </div>
-      </div>
-      <a href="/2023/06/17/hello-world/" class="post-entry-link" title="Hello World"></a>
-    </div>
-  </div>
-  
-</div>
-
-      
-      
-      <div class="m3-index-pagination">
-        
-        <div class="itp-m3-card m3-pagination-card">
-          <div class="pagination-text pagination-text-first"><span>第一页</span></div>
-        </div>
-        
-        
-        
-        
-        <div class="itp-m3-card m3-pagination-card">
-          <div class="pagination-text pagination-text-final"><span>最后一页</span></div>
-        </div>
-        
-      </div>
-      <!--首页微信号二维码弹窗-->
-      
-      
-      
-      
-    </div>
-  </section>
+<div class="mdui-dialog" id="shareDialogImg" style="text-align: center;">
+  分享图已生成
+</div>-->
 </section>
-
   <!-- Footer -->
   <!-- Footer -->
 <footer class="itp-footer text-center">
@@ -464,39 +472,6 @@
 <!---->
 <!---->
 <!--首页键盘快捷键-->
-
-<script>
-  window.onkeydown = function allpage_hotkey() {
-    //[键盘快捷键] Shift+1 首页
-    if (event.shiftKey && event.keyCode === 49) {
-      window.location.href = "/"
-    };
-    //[键盘快捷键] Shift+2 归档页
-    if (event.shiftKey && event.keyCode === 50) {
-      window.location.href = "/archives/"
-    };
-    //[键盘快捷键] Shift+3 相册页
-    if (event.shiftKey && event.keyCode === 51) {
-      window.location.href = "/gallery/"
-    };
-    //[键盘快捷键] Shift+4 关于页
-    if (event.shiftKey && event.keyCode === 52) {
-      window.location.href = "/about/"
-    };
-    //[键盘快捷键] Shift+5 友情链接页
-    if (event.shiftKey && event.keyCode === 53) {
-      window.location.href = "/links/"
-    };
-    //[键盘快捷键] 左箭头 上一页
-    if (event.keyCode === 37) {
-      window.location.href = "/"
-    };
-    //[键盘快捷键] 右箭头 下一页
-    if (event.keyCode === 39) {
-      window.location.href = "/"
-    };
-  }
-</script>
 
   <style>
   :root {
