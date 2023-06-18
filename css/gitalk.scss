@@ -1,18 +1,16 @@
-@charset "UTF-8";
-:root {
-  --radius: 5px;
-}
+@import './_customize';
 
 @font-face {
   font-family: octicons-link;
-  src: url(data:font/woff;charset=utf-8;base64,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) format("woff");
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
 }
+
 .markdown-body {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   line-height: 1.5;
   color: #24292e;
-  font-family: "SF UI Display", ".PingFang SC", "PingFang SC", "Neue Haas Grotesk Text Pro", "Arial Nova", "Segoe UI", "Microsoft YaHei", "Microsoft JhengHei", "Helvetica Neue", "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC", "Helvetica", "Hiragino Sans GB", sans-serif;
+  font-family: 'SF UI Display', '.PingFang SC', 'PingFang SC', 'Neue Haas Grotesk Text Pro', 'Arial Nova', 'Segoe UI', 'Microsoft YaHei', 'Microsoft JhengHei', 'Helvetica Neue', 'Source Han Sans SC', 'Noto Sans CJK SC', 'Source Han Sans CN', 'Noto Sans SC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'Helvetica', 'Hiragino Sans GB', sans-serif;
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
@@ -202,7 +200,7 @@
   overflow: visible;
 }
 
-.markdown-body [type=checkbox] {
+.markdown-body [type="checkbox"] {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 0;
@@ -388,11 +386,11 @@
   content: "";
 }
 
-.markdown-body > *:first-child {
+.markdown-body>*:first-child {
   margin-top: 0 !important;
 }
 
-.markdown-body > *:last-child {
+.markdown-body>*:last-child {
   margin-bottom: 0 !important;
 }
 
@@ -437,11 +435,11 @@
   border-left: 0.25em solid #dfe2e5;
 }
 
-.markdown-body blockquote > :first-child {
+.markdown-body blockquote>:first-child {
   margin-top: 0;
 }
 
-.markdown-body blockquote > :last-child {
+.markdown-body blockquote>:last-child {
   margin-bottom: 0;
 }
 
@@ -543,11 +541,11 @@
   margin-bottom: 0;
 }
 
-.markdown-body li > p {
+.markdown-body li>p {
   margin-top: 16px;
 }
 
-.markdown-body li + li {
+.markdown-body li+li {
   margin-top: 0.25em;
 }
 
@@ -613,14 +611,14 @@
 .markdown-body code::before,
 .markdown-body code::after {
   letter-spacing: -0.2em;
-  content: " ";
+  content: "\A0";
 }
 
 .markdown-body pre {
   word-wrap: normal;
 }
 
-.markdown-body pre > code {
+.markdown-body pre>code {
   padding: 0;
   margin: 0;
   font-size: 100%;
@@ -686,7 +684,7 @@
   box-shadow: inset 0 -1px 0 #c6cbd1;
 }
 
-.markdown-body :checked + .radio-label {
+.markdown-body :checked+.radio-label {
   position: relative;
   z-index: 1;
   border-color: #0366d6;
@@ -696,7 +694,7 @@
   list-style-type: none;
 }
 
-.markdown-body .task-list-item + .task-list-item {
+.markdown-body .task-list-item+.task-list-item {
   margin-top: 3px;
 }
 
@@ -735,21 +733,21 @@
 }
 
 .gt-container a {
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .gt-container a:hover {
-  color: var(--sub-color);
-  border-color: var(--sub-color);
+  color: $sub-color;
+  border-color: $sub-color;
 }
 
 .gt-container a.is--active {
-  color: #3D4350;
+  color: $deep-grey;
   cursor: default !important;
 }
 
 .gt-container a.is--active:hover {
-  color: #3D4350;
+  color: $deep-grey;
 }
 
 .gt-container .hide {
@@ -766,7 +764,7 @@
 .gt-container .gt-svg svg {
   width: 100%;
   height: 100%;
-  fill: var(--main-color);
+  fill: $main-color;
 }
 
 .gt-container .gt-ico {
@@ -796,7 +794,7 @@
 }
 
 .gt-container .gt-spinner::before {
-  content: "";
+  content: '';
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   position: absolute;
@@ -807,16 +805,16 @@
   margin-left: -0.375em;
   border-radius: 0;
   border: 0px solid #fff;
-  border-top-color: var(--main-color);
+  border-top-color: $main-color;
   -webkit-animation: gt-kf-rotate 0.6s linear infinite;
   animation: gt-kf-rotate 0.6s linear infinite;
 }
 
 .gt-container .gt-loader {
   position: relative;
-  border: 1px solid #767676;
+  border: 1px solid $grey;
   -webkit-animation: ease gt-kf-rotate 1.5s infinite;
-  animation: ease gt-kf-rotate 1.5s infinite;
+          animation: ease gt-kf-rotate 1.5s infinite;
   display: inline-block;
   font-style: normal;
   width: 1.75em;
@@ -826,7 +824,7 @@
 }
 
 .gt-container .gt-loader:before {
-  content: "";
+  content: '';
   position: absolute;
   display: block;
   top: 0;
@@ -835,7 +833,7 @@
   margin-left: -0.1875em;
   width: 0.375em;
   height: 0.375em;
-  background-color: #767676;
+  background-color: $grey;
   border-radius: 50%;
 }
 
@@ -851,6 +849,7 @@
     height: 2em;
   }
 }
+
 .gt-container .gt-avatar img {
   width: 100%;
   height: auto;
@@ -868,16 +867,18 @@
     height: 1.875em;
   }
 }
+
 .gt-container .gt-btn {
   padding: 0.75em 1.25em;
   display: inline-block;
   line-height: 1;
+  
   text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
-  border: 0px solid var(--main-color);
+  border: 0px solid $main-color;
   border-radius: 0px;
-  background-color: var(--main-color);
+  background-color: $main-color;
   color: #fff;
   outline: none;
   font-size: 0.75em;
@@ -907,15 +908,16 @@
 
 .gt-container .gt-btn-preview {
   background-color: #fff;
-  color: var(--main-color) !important;
-}
-.gt-container .gt-btn-preview span {
-  color: var(--main-color) !important;
+  color: $main-color !important;
+
+  span {
+    color: $main-color !important;
+  }
 }
 
 .gt-container .gt-btn-public:hover {
-  background-color: var(--sub-color);
-  border-color: var(--sub-color);
+  background-color: $sub-color;
+  border-color: $sub-color;
 }
 
 .gt-container .gt-error {
@@ -940,7 +942,7 @@
 }
 
 .gt-container .gt-link {
-  border-bottom: 1px dotted var(--main-color);
+  border-bottom: 1px dotted $main-color;
 }
 
 .gt-container .gt-link-counts,
@@ -999,7 +1001,7 @@
 }
 
 .gt-container .gt-user .is--poping .gt-ico svg {
-  fill: var(--main-color);
+  fill: $main-color;
 }
 
 .gt-container .gt-version {
@@ -1035,10 +1037,10 @@
 }
 
 .gt-container .gt-popup .gt-action.is--active:before {
-  content: "";
+  content: '';
   width: 0.35em;
   height: 0.35em;
-  background: var(--main-color);
+  background: $main-color;
   position: absolute;
   left: 0.5em;
   top: 0.4375em;
@@ -1063,6 +1065,7 @@
     margin-left: 0.875em;
   }
 }
+
 .gt-container .gt-header-textarea {
   padding: 0.75em;
   display: block;
@@ -1109,9 +1112,10 @@
     margin: 0;
   }
 }
+
 .gt-container .gt-header-controls-tip {
   font-size: 0.875em;
-  color: var(--main-color);
+  color: $main-color;
   text-decoration: none;
   vertical-align: sub;
 }
@@ -1121,6 +1125,7 @@
     display: none;
   }
 }
+
 .gt-container .gt-header-controls .gt-btn {
   float: right;
   margin-left: 1.25em;
@@ -1133,8 +1138,9 @@
     margin: 0.75em 0 0;
   }
 }
+
 .gt-container:after {
-  content: "";
+  content: '';
   position: fixed;
   bottom: 100%;
   left: 0;
@@ -1148,7 +1154,7 @@
 }
 
 .gt-container.gt-input-focused:after {
-  content: "";
+  content: '';
   position: fixed;
   bottom: 0%;
   left: 0;
@@ -1209,6 +1215,7 @@
     padding: 0.625em 0.75em;
   }
 }
+
 .gt-container .gt-comment-header {
   margin-bottom: 0.5em;
   font-size: 0.875em;
@@ -1229,7 +1236,7 @@
 
 .gt-container .gt-comment-username {
   font-weight: 500;
-  color: var(--main-color);
+  color: $main-color;
   text-decoration: none;
 }
 
@@ -1272,7 +1279,7 @@
 }
 
 .gt-container .gt-comment-body {
-  color: #3D4350 !important;
+  color: $deep-grey !important;
 }
 
 .gt-container .gt-comment-admin .gt-comment-content {
@@ -1284,21 +1291,26 @@
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
 @keyframes gt-kf-rotate {
   0% {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
 }
+
+/*# sourceMappingURL=gitalk.css.map*/
 
 .gt-container .gt-meta {
   margin-bottom: 1.25em;
@@ -1309,18 +1321,21 @@
 }
 
 .gt-container .gt-ico-github svg {
-  fill: #767676;
+  fill: $grey;
 }
 
 .gt-btn-login,
 .gt-btn-public {
-  background-color: var(--main-color) !important;
+  background-color: $main-color !important;
   border: 0 !important;
 }
 
-.gt-container .gt-btn,
-.gt-container .gt-btn-preview {
-  border: 0 !important;
+.gt-container {
+
+  .gt-btn,
+  .gt-btn-preview {
+    border: 0 !important;
+  }
 }
 
 .gt-btn-login,
@@ -1331,7 +1346,7 @@
 
 .gt-header-controls-tip,
 .gt-container a {
-  color: var(--main-color) !important;
+  color: $main-color !important;
 }
 
 .gt-header-controls-tip {
@@ -1340,9 +1355,10 @@
 
 .gt-btn .gt-btn-preview {
   background-color: #fff;
-}
-.gt-btn .gt-btn-preview span {
-  color: var(--main-color) !important;
+
+  span {
+    color: $main-color !important;
+  }
 }
 
 .gt-btn-public span,
