@@ -10,15 +10,6 @@
     <priority>0.6</priority>
   </url>
   
-  <url>
-    <loc>https://northwood-t.github.io/links/index.html</loc>
-    
-    <lastmod>2023-06-18</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
 
   <url>
     <loc>https://northwood-t.github.io/</loc>
@@ -28,6 +19,27 @@
   </url>
 
   
+  <url>
+    <loc>https://northwood-t.github.io/tags/doc/</loc>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://northwood-t.github.io/tags/flex-block/</loc>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
+  
+  <url>
+    <loc>https://northwood-t.github.io/categories/doc/</loc>
+    <lastmod>2023-06-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>
