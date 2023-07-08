@@ -26,7 +26,7 @@
 
   
 
-  <title>嗨呀，是我吗？ | Northwood</title>
+  <title>辨析冒泡排序和选择排序 | Northwood</title>
 
   
 
@@ -52,7 +52,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://c.wallhere.com/photos/33/f2/2560x1600_px_games_Gaming_gray_Keyboards_mac_minimalistic_Pc-1874905.jpg!d)"></div>
+    <div class="post-image" style="background-image: url(https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw)"></div>
   
 
   <!-- navbar -->
@@ -103,32 +103,27 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">嗨呀，是我吗？</h1>
+          <h1 class="title-wrap">辨析冒泡排序和选择排序</h1>
           <h2 class="title-sub-wrap">
             <strong>Northwood-T</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-06-18T05:56:49.000Z" itemprop="datePublished">2023-06-18</time>
+            <time  class="article-date" datetime="2023-07-08T08:21:37.000Z" itemprop="datePublished">2023-07-08</time>
           </h2>
           
-            <h2 class="title-sub-wrap new-date">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2023-07-03T11:14:22.311Z" itemprop="dateUpdated">2023-07-03</time>
-            </h2>
           
-          
-            <h2 id="/2023/06/18/%E5%97%A8%E5%91%80%EF%BC%8C%E6%98%AF%E6%88%91%E5%90%97%EF%BC%9F/" class="title-sub-wrap leancloud_visitors" data-flag-title="嗨呀，是我吗？">
+            <h2 id="/2023/07/08/%E8%BE%A8%E6%9E%90%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" class="title-sub-wrap leancloud_visitors" data-flag-title="辨析冒泡排序和选择排序">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/doc/">📒 doc</a></li>
+    <li><a href="/categories/c/">📒 c++</a></li>
   
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/test/">🏷️ test</a></li>
+    <li><a href="/tags/c-%E5%AD%A6%E4%B9%A0/">🏷️ c++学习</a></li>
   
 </ul>
         </div>
@@ -152,7 +147,38 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p>你说的对，但是《原神》是由米哈游自主研发的一款全新开放世界冒险游戏。游戏发生在一个被称作「提瓦特」的幻想世界，在这里，被神选中的人将被授予「神之眼」，导引元素之力。你将扮演一位名为「旅行者」的神秘角色，在自由的旅行中邂逅性格各异、能力独特的同伴们，和他们一起击败强敌，<mark>找回失散的亲人</mark>——同时，逐步发掘「原神」的真相。</p>
+        <ol>
+<li><p>冒泡排序：<br>比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br><strong>针对所有的元素重复以上的步骤，除了最后一个。</strong><br>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</p>
+  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0 ;i&lt;len-1;i++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int j=0;j&lt;len-1-i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[j]&gt;arr[j+1])</span><br><span class="line">           &#123; int temp=arr[j];</span><br><span class="line">           arr[j]=arr[j+1];</span><br><span class="line">           arr[j+1]=temp;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择排序<br>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。<br>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。<br>重复第二步，直到所有元素均排序完毕。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   for(int j=0;j&lt;6;j++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=j;i&lt;6;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[i]&lt;arr[j])</span><br><span class="line">        &#123;int temp=arr[i];</span><br><span class="line">         arr[i]=arr[j];</span><br><span class="line">         arr[j]=temp&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ol>
+<p><mark>辨析异同</mark></p>
+<table>
+<thead>
+<tr>
+<th align="left">冒泡排序</th>
+<th align="left">选择排序</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">比较的是相邻元素</td>
+<td align="left">比较的是某一位的元素与其它元素</td>
+</tr>
+<tr>
+<td align="left">比较次数是len-1</td>
+<td align="left">比较次数是len</td>
+</tr>
+<tr>
+<td align="left">比较轮数和比较次数构成嵌套循环</td>
+<td align="left">数组位数和比较次数构成嵌套循环</td>
+</tr>
+<tr>
+<td align="left">都要使数组元素反转</td>
+<td align="left">都要使数组元素反转</td>
+</tr>
+</tbody></table>
 
       </section>
 
@@ -160,22 +186,22 @@
       
         <nav class="article-nav">
           
+          
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="http://mms2.baidu.com/it/u=2163354828,4058633258&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75&amp;fmt=auto&amp;q=75?w=452&amp;h=400"></div>
+      <div class="card-cover" background-image-lazy data-img="https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw"></div>
     
     <div class="card-text">
       
-        <a href="/2023/06/30/%E5%A5%BD%E6%83%B3%E5%AD%A6%E4%B9%A0/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">好想学习😖</h2>
+        <a href="/2023/07/08/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">通讯录管理系统</h2>
         </a>
       
-      <div class="card-text--row">Newer</div>
+      <div class="card-text--row">Older</div>
     </div>
   </article>
 </div>
-          
           
         </nav>
       

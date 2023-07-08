@@ -6,7 +6,7 @@
   <link href="https://northwood-t.github.io/atom.xml" rel="self"/>
   
   <link href="https://northwood-t.github.io/"/>
-  <updated>2023-07-08T05:54:34.360Z</updated>
+  <updated>2023-07-08T08:36:56.154Z</updated>
   <id>https://northwood-t.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>辨析冒泡排序和选择排序</title>
+    <link href="https://northwood-t.github.io/2023/07/08/%E8%BE%A8%E6%9E%90%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/"/>
+    <id>https://northwood-t.github.io/2023/07/08/%E8%BE%A8%E6%9E%90%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/</id>
+    <published>2023-07-08T08:21:37.000Z</published>
+    <updated>2023-07-08T08:36:56.154Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>冒泡排序：<br>比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br><strong>针对所有的元素重复以上的步骤，除了最后一个。</strong><br>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</p>  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0 ;i&lt;len-1;i++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int j=0;j&lt;len-1-i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[j]&gt;arr[j+1])</span><br><span class="line">           &#123; int temp=arr[j];</span><br><span class="line">           arr[j]=arr[j+1];</span><br><span class="line">           arr[j+1]=temp;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>选择排序<br>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。<br>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。<br>重复第二步，直到所有元素均排序完毕。</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   for(int j=0;j&lt;6;j++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=j;i&lt;6;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[i]&lt;arr[j])</span><br><span class="line">        &#123;int temp=arr[i];</span><br><span class="line">         arr[i]=arr[j];</span><br><span class="line">         arr[j]=temp&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ol><p><mark>辨析异同</mark></p><table><thead><tr><th align="left">冒泡排序</th><th align="left">选择排序</th></tr></thead><tbody><tr><td align="left">比较的是相邻元素</td><td align="left">比较的是某一位的元素与其它元素</td></tr><tr><td align="left">比较次数是len-1</td><td align="left">比较次数是len</td></tr><tr><td align="left">比较轮数和比较次数构成嵌套循环</td><td align="left">数组位数和比较次数构成嵌套循环</td></tr><tr><td align="left">都要使数组元素反转</td><td align="left">都要使数组元素反转</td></tr></tbody></table>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;冒泡排序：&lt;br&gt;比较相邻的元素。如果第一个比第二个大，就交换他们两个。&lt;br&gt;对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。&lt;br&gt;&lt;strong&gt;针对所有的元素重复以上的步骤，除了最后一个。&lt;/stro</summary>
+      
+    
+    
+    
+    <category term="c++" scheme="https://northwood-t.github.io/categories/c/"/>
+    
+    
+    <category term="c++学习" scheme="https://northwood-t.github.io/tags/c-%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
   
   <entry>
     <title>通讯录管理系统</title>
