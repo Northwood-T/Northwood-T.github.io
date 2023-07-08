@@ -110,6 +110,11 @@
             <time  class="article-date" datetime="2023-07-05T03:50:10.000Z" itemprop="datePublished">2023-07-05</time>
           </h2>
           
+            <h2 class="title-sub-wrap new-date">
+              <span>最后更新于</span>
+              <time  class="article-updated" datetime="2023-07-08T05:52:32.267Z" itemprop="dateUpdated">2023-07-08</time>
+            </h2>
+          
           
             <h2 id="/2023/07/05/c-%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%A4%8D%E7%9B%98/" class="title-sub-wrap leancloud_visitors" data-flag-title="c++基础内容复盘">
               <em>文章访问量</em>
@@ -162,13 +167,13 @@
 <p>是什么意思？<br>答：<br>(1).函数的一种（无参有返）<br>这里是运行主程序的意思<br>(2).如果写<br>system(“pause&gt;nul”)<br>则不会出现“请按任意键继续”<br>因为&gt;是重定向符（将输出的内容重定向到其它的设备）<br>nul 是空设备，可以把他看成批处理的“黑洞”（什么东西都可以吞下，并使之永远消失）<br>(3)return 0<br>  是代表函数运行结束的意思,即程序正常终止。(函数返回时向外部环境报告的是“是否出错”，没出错则返回0，也就是false)<br>  相反地，return 1&#x2F;return -1就是运行失败，即程序不正常终止。</p>
 </li>
 <li><p>如果想要程序循环进行，直接</p>
-</li>
-</ol>
-<p>while(1)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(1)//非零为真，无限循环</span><br></pre></td></tr></table></figure>
 <p>即可</p>
-<ol start="4">
-<li>随机数生成<br>(1)使用系统预设标准库<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;random&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">        int min = 0,max = 100;</span><br><span class="line">        random_device seed;//硬件生成随机数种子</span><br><span class="line">	ranlux48 engine(seed());//利用种子生成随机数引擎</span><br><span class="line">        uniform_int_distribution&lt;&gt; distrib(min, max);//设置随机数范围，并为均匀分布</span><br><span class="line">        int random = distrib(engine);//随机数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-(2)时间+线性同余法<br>理解:<br>①时间一直都在变，通过算法达到伪随机的目的<br>②线性同余方法（LCG）是一种产生伪随机数的方法。<br>它是根据递归公式：RandSeed &#x3D; (A * RandSeed + B) % M<br>线性同余法最重要的是定义了三个整数，乘数 A、增量 B和模数 M，其中A, B, M是产生器设定的常数。 LCG的周期最大为 M，但大部分情况都会少于M。要令LCG达到最大周期，应符合以下条件：</li>
+</li>
+<li><p>随机数生成<br>(1)使用系统预设标准库</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;random&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">        int min = 0,max = 100;</span><br><span class="line">        random_device seed;//硬件生成随机数种子</span><br><span class="line">	ranlux48 engine(seed());//利用种子生成随机数引擎</span><br><span class="line">        uniform_int_distribution&lt;&gt; distrib(min, max);//设置随机数范围，并为均匀分布</span><br><span class="line">        int random = distrib(engine);//随机数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>(2)时间+线性同余法<br>理解:<br>①时间一直都在变，通过算法达到伪随机的目的<br>②线性同余方法（LCG）是一种产生伪随机数的方法。<br>它是根据递归公式：RandSeed &#x3D; (A * RandSeed + B) % M<br>线性同余法最重要的是定义了三个整数，乘数 A、增量 B和模数 M，其中A, B, M是产生器设定的常数。 LCG的周期最大为 M，但大部分情况都会少于M。要令LCG达到最大周期，应符合以下条件：</p>
+</li>
 </ol>
 <table>
 <thead>
@@ -238,6 +243,22 @@
       
         <nav class="article-nav">
           
+            <div class="article-nav-item layout-padding">
+  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
+    
+      <div class="card-cover" background-image-lazy data-img="https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw"></div>
+    
+    <div class="card-text">
+      
+        <a href="/2023/07/08/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">通讯录管理系统</h2>
+        </a>
+      
+      <div class="card-text--row">Newer</div>
+    </div>
+  </article>
+</div>
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -287,7 +308,7 @@
         <svg class="icon icon-article" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <path d="M240.51564747 647.74217627h196.07203239c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806V165.10332731c0-33.18142087-30.16492806-60.32985613-60.32985612-60.32985611H245.04038668C225.43318342 104.7734712 210.35071939 119.85593522 210.35071939 139.46313845V617.57724821c0 16.59071043 13.57421762 30.16492806 30.16492808 30.16492806z m663.62841731-452.47392089v482.63884894c0 33.18142087-27.14843525 60.32985613-60.32985612 60.32985613H180.18579134c-33.18142087 0-60.32985613-27.14843525-60.32985612-60.32985613V195.26825538c-49.77213131 0-90.49478418 40.72265287-90.49478417 90.49478417v452.4739209c0 49.77213131 40.72265287 90.49478418 90.49478417 90.49478417h286.56681657c16.59071043 0 30.16492806 13.57421762 30.16492807 30.16492807s13.57421762 30.16492806 30.16492805 30.16492806h90.49478418c16.59071043 0 30.16492806-13.57421762 30.16492805-30.16492806s13.57421762-30.16492806 30.16492807-30.16492807h286.56681657c49.77213131 0 90.49478418-40.72265287 90.49478417-90.49478417V285.76303955c0-49.77213131-40.72265287-90.49478418-90.49478417-90.49478417zM587.41232014 647.74217627h191.54729318c19.60720323 0 34.68966726-15.08246403 34.68966729-34.68966727V134.93839925c0-16.59071043-13.57421762-30.16492806-30.16492808-30.16492805H617.57724821c-30.16492806 0-60.32985613 27.14843525-60.32985612 60.32985611v452.4739209c0 16.59071043 13.57421762 30.16492806 30.16492805 30.16492806z" fill="currentColor"></path>
 </svg>
-        <span>5</span>
+        <span>6</span>
       </div>
       <div class="count-box--item">
         <svg class="icon icon-categories" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
@@ -333,7 +354,7 @@
       
         <li class="categorys-list-item">
           <a href="/categories/c/">
-            c++ (1)
+            c++ (2)
           </a>
         </li>
       
@@ -350,7 +371,7 @@
   </div>
   <div class="widget-body">
     <div class="tags-cloud">
-      <a href="/tags/c-%E5%AD%A6%E4%B9%A0/" style="font-size: 10px;" class="tags-cloud-0">c++学习</a> <a href="/tags/test/" style="font-size: 10px;" class="tags-cloud-0">test</a> <a href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93%E4%BB%8E%E5%93%AA%E5%81%B7%E7%9A%84/" style="font-size: 20px;" class="tags-cloud-10">不知道从哪偷的</a> <a href="/tags/%E5%AE%9A%E5%9E%8B%E6%96%87%E6%94%B9/" style="font-size: 10px;" class="tags-cloud-0">定型文改</a>
+      <a href="/tags/c-%E5%AD%A6%E4%B9%A0/" style="font-size: 20px;" class="tags-cloud-10">c++学习</a> <a href="/tags/test/" style="font-size: 10px;" class="tags-cloud-0">test</a> <a href="/tags/%E4%B8%8D%E7%9F%A5%E9%81%93%E4%BB%8E%E5%93%AA%E5%81%B7%E7%9A%84/" style="font-size: 20px;" class="tags-cloud-10">不知道从哪偷的</a> <a href="/tags/%E5%AE%9A%E5%9E%8B%E6%96%87%E6%94%B9/" style="font-size: 10px;" class="tags-cloud-0">定型文改</a>
     </div>
   </div>
 </section>
