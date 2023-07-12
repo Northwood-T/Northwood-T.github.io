@@ -26,7 +26,7 @@
 
   
 
-  <title>辨析冒泡排序和选择排序 | Northwood</title>
+  <title>P1055 [NOIP2008 普及组] ISBN 号码 | Northwood</title>
 
   
 
@@ -52,7 +52,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw)"></div>
+    <div class="post-image" style="background-image: url(https://cdn.luogu.com.cn/fe/logo.png?0fdd294ff62e331d2f70e1a37ba4ee02)"></div>
   
 
   <!-- navbar -->
@@ -103,15 +103,15 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">辨析冒泡排序和选择排序</h1>
+          <h1 class="title-wrap">P1055 [NOIP2008 普及组] ISBN 号码</h1>
           <h2 class="title-sub-wrap">
             <strong>Northwood-T</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-07-08T08:21:37.000Z" itemprop="datePublished">2023-07-08</time>
+            <time  class="article-date" datetime="2023-07-12T13:08:07.000Z" itemprop="datePublished">2023-07-12</time>
           </h2>
           
           
-            <h2 id="/2023/07/08/%E8%BE%A8%E6%9E%90%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" class="title-sub-wrap leancloud_visitors" data-flag-title="辨析冒泡排序和选择排序">
+            <h2 id="/2023/07/12/P1055/" class="title-sub-wrap leancloud_visitors" data-flag-title="P1055 [NOIP2008 普及组] ISBN 号码">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
@@ -123,7 +123,7 @@
 </ul>
           <ul class="wrap-list dark">
   
-    <li><a href="/tags/c-%E5%AD%A6%E4%B9%A0/">🏷️ c++学习</a></li>
+    <li><a href="/tags/c-%E8%A7%A3%E9%A2%98/">🏷️ c++解题</a></li>
   
 </ul>
         </div>
@@ -147,36 +147,34 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <ol>
-<li><p>冒泡排序：<br>比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br><strong>针对所有的元素重复以上的步骤，除了最后一个。</strong><br>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0 ;i&lt;len-1;i++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int j=0;j&lt;len-1-i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[j]&gt;arr[j+1])</span><br><span class="line">           &#123; int temp=arr[j];</span><br><span class="line">           arr[j]=arr[j+1];</span><br><span class="line">           arr[j+1]=temp;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>选择排序<br>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。<br>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。<br>重复第二步，直到所有元素均排序完毕。</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   for(int j=0;j&lt;len;j++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=j;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[i]&lt;arr[j])</span><br><span class="line">        &#123;int temp=arr[i];</span><br><span class="line">         arr[i]=arr[j];</span><br><span class="line">         arr[j]=temp&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><mark>辨析异同</mark></p>
+        <blockquote>
+<h1 id="NOIP2008-普及组-ISBN-号码"><a href="#NOIP2008-普及组-ISBN-号码" class="headerlink" title="[NOIP2008 普及组] ISBN 号码"></a>[NOIP2008 普及组] ISBN 号码</h1><h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p>每一本正式出版的图书都有一个 ISBN 号码与之对应，ISBN 码包括 $9$ 位数字、$1$ 位识别码和 $3$ 位分隔符，其规定格式如 <code>x-xxx-xxxxx-x</code>，其中符号 <code>-</code> 就是分隔符（键盘上的减号），最后一位是识别码，例如 <code>0-670-82162-4</code>就是一个标准的 ISBN 码。ISBN 码的首位数字表示书籍的出版语言，例如 $0$ 代表英语；第一个分隔符 <code>-</code> 之后的三位数字代表出版社，例如 $670$ 代表维京出版社；第二个分隔符后的五位数字代表该书在该出版社的编号；最后一位为识别码。</p>
+<p>识别码的计算方法如下：</p>
+<p>首位数字乘以 $1$ 加上次位数字乘以 $2$ ……以此类推，用所得的结果 $ \bmod 11$，所得的余数即为识别码，如果余数为 $10$，则识别码为大写字母 $X$。例如 ISBN 号码 <code>0-670-82162-4</code> 中的识别码 $4$ 是这样得到的：对 <code>067082162</code> 这 $9$ 个数字，从左至右，分别乘以 $1,2,\dots,9$ 再求和，即 $0\times 1+6\times 2+……+2\times 9&#x3D;158$，然后取 $158 \bmod 11$ 的结果 $4$ 作为识别码。</p>
+<p>你的任务是编写程序判断输入的 ISBN 号码中识别码是否正确，如果正确，则仅输出 <code>Right</code>；如果错误，则输出你认为是正确的 ISBN 号码。</p>
+<h2 id="输入格式"><a href="#输入格式" class="headerlink" title="输入格式"></a>输入格式</h2><p>一个字符序列，表示一本书的 ISBN 号码（保证输入符合 ISBN 号码的格式要求）。</p>
+<h2 id="输出格式"><a href="#输出格式" class="headerlink" title="输出格式"></a>输出格式</h2><p>一行，假如输入的 ISBN 号码的识别码正确，那么输出 <code>Right</code>，否则，按照规定的格式，输出正确的 ISBN 号码（包括分隔符 <code>-</code>）。</p>
+<p>2008 普及组第一题</p>
+</blockquote>
+<p><em><strong>复盘</strong></em></p>
+<p>在这里容易出错的地方是对于余数10和识别码X的关联：<br>一开始我只想到了余数为10时要在非right的情况下转化输出为X，而没有想到识别码为X时怎么对余数为10时进行判断。<br>然后我发现了这个问题，却错误地想让余数10和X进行转化后再比较。<br>然而这是没有必要的，如果这样操作，不仅会让代码变得及其繁琐，而且后面的right和赋值是条件判断，使代码不连贯，降低可读性。<br>其实只要让这两个地方出现的时候分别判断并输出即可。<br>即：<br><strong>1.如果结果为right，那么增加判断条件”识别码为X时余数为10”即可。</strong><br><strong>2.结果不为right</strong><br><strong>如果识别码为X，余数肯定不为10，正常赋值输出即可；</strong><br><strong>如果余数为10，只要将识别码更改为X再输出即可。</strong></p>
 <table>
 <thead>
 <tr>
-<th align="left">冒泡排序</th>
-<th align="left">选择排序</th>
+<th align="left">总结如下：</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="left">比较的是相邻元素</td>
-<td align="left">比较的是某一位的元素与其它元素</td>
+<td align="left">出现的’-‘可以用if判断语句跳过</td>
 </tr>
 <tr>
-<td align="left">比较次数是<strong>len-1</strong></td>
-<td align="left">比较次数是<strong>len</strong></td>
+<td align="left">利用字符串数组使构造更加方便</td>
 </tr>
 <tr>
-<td align="left">比较轮数和比较次数构成嵌套循环</td>
-<td align="left">数组位数和比较次数构成嵌套循环</td>
+<td align="left">要注意char和int类型的比较要转换(利用ASCII编码)</td>
 </tr>
 <tr>
-<td align="left">都要使数组元素交换</td>
-<td align="left">都要使数组元素交换</td>
+<td align="left">思考问题时要从程序运行的角度思考，而非先思考后转化</td>
 </tr>
 </tbody></table>
 
@@ -185,6 +183,7 @@
       
       
         <nav class="article-nav">
+          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
@@ -195,23 +194,6 @@
       
         <a href="/2023/07/10/title/" itemprop="url">
           <h2 class="card-text--title text-ellipsis">？？？</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
-          
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2023/07/08/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">通讯录管理系统</h2>
         </a>
       
       <div class="card-text--row">Older</div>
