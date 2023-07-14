@@ -26,7 +26,7 @@
 
   
 
-  <title>辨析冒泡排序和选择排序 | Northwood</title>
+  <title>难死了)( | Northwood</title>
 
   
 
@@ -52,7 +52,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw)"></div>
+    <div class="post-image" style="background-image: url(https://img2.baidu.com/it/u=2644922734,3437276813&amp;fm=253&amp;fmt=auto&amp;app=120&amp;f=JPEG?w=800&amp;h=500)"></div>
   
 
   <!-- navbar -->
@@ -103,27 +103,23 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">辨析冒泡排序和选择排序</h1>
+          <h1 class="title-wrap">难死了)(</h1>
           <h2 class="title-sub-wrap">
             <strong>Northwood-T</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-07-08T08:21:37.000Z" itemprop="datePublished">2023-07-08</time>
+            <time  class="article-date" datetime="2023-07-14T13:38:13.000Z" itemprop="datePublished">2023-07-14</time>
           </h2>
           
           
-            <h2 id="/2023/07/08/%E8%BE%A8%E6%9E%90%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F%E5%92%8C%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F/" class="title-sub-wrap leancloud_visitors" data-flag-title="辨析冒泡排序和选择排序">
+            <h2 id="/2023/07/14/%E9%9A%BE%E6%AD%BB%E4%BA%86/" class="title-sub-wrap leancloud_visitors" data-flag-title="难死了)(">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/c/">📒 c++</a></li>
-  
 </ul>
           <ul class="wrap-list dark">
-  
-    <li><a href="/tags/c-%E5%AD%A6%E4%B9%A0/">🏷️ c++学习</a></li>
   
 </ul>
         </div>
@@ -147,38 +143,7 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <ol>
-<li><p>冒泡排序：<br>比较相邻的元素。如果第一个比第二个大，就交换他们两个。<br>对每一对相邻元素作同样的工作，从开始第一对到结尾的最后一对。这步做完后，最后的元素会是最大的数。<br><strong>针对所有的元素重复以上的步骤，除了最后一个。</strong><br>持续每次对越来越少的元素重复上面的步骤，直到没有任何一对数字需要比较。</p>
-  <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">for(int i=0 ;i&lt;len-1;i++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int j=0;j&lt;len-1-i;j++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[j]&gt;arr[j+1])</span><br><span class="line">           &#123; int temp=arr[j];</span><br><span class="line">           arr[j]=arr[j+1];</span><br><span class="line">           arr[j+1]=temp;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>选择排序<br>首先在未排序序列中找到最小（大）元素，存放到排序序列的起始位置。<br>再从剩余未排序元素中继续寻找最小（大）元素，然后放到已排序序列的末尾。<br>重复第二步，直到所有元素均排序完毕。</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">   for(int j=0;j&lt;len;j++)</span><br><span class="line">&#123;</span><br><span class="line">    for(int i=j;i&lt;len;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        if(arr[i]&lt;arr[j])</span><br><span class="line">        &#123;int temp=arr[i];</span><br><span class="line">         arr[i]=arr[j];</span><br><span class="line">         arr[j]=temp&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ol>
-<p><mark>辨析异同</mark></p>
-<table>
-<thead>
-<tr>
-<th align="left">冒泡排序</th>
-<th align="left">选择排序</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">比较的是相邻元素</td>
-<td align="left">比较的是某一位的元素与其它元素</td>
-</tr>
-<tr>
-<td align="left">比较次数是<strong>len-1</strong></td>
-<td align="left">比较次数是<strong>len</strong></td>
-</tr>
-<tr>
-<td align="left">比较轮数和比较次数构成嵌套循环</td>
-<td align="left">数组位数和比较次数构成嵌套循环</td>
-</tr>
-<tr>
-<td align="left">都要使数组元素交换</td>
-<td align="left">都要使数组元素交换</td>
-</tr>
-</tbody></table>
+        <p><strong>花了两个小时就写了一道半出来，还不知道哪错了😓😖😣</strong></p>
 
       </section>
 
@@ -186,32 +151,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://w.wallhaven.cc/full/3l/wallhaven-3lrkw3.jpg"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2023/07/10/title/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">？？？</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw"></div>
+      <div class="card-cover" background-image-lazy data-img="https://cdn.luogu.com.cn/fe/logo.png?0fdd294ff62e331d2f70e1a37ba4ee02"></div>
     
     <div class="card-text">
       
-        <a href="/2023/07/08/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">通讯录管理系统</h2>
+        <a href="/2023/07/12/P1055/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">P1055 [NOIP2008 普及组] ISBN 号码</h2>
         </a>
       
       <div class="card-text--row">Older</div>
