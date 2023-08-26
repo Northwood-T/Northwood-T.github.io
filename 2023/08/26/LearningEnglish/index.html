@@ -26,7 +26,7 @@
 
   
 
-  <title>c++基础内容复盘 | Northwood</title>
+  <title>LearningEnglish | Northwood</title>
 
   
 
@@ -52,7 +52,7 @@
 <!-- header container -->
 <header class="header-container post">
   
-    <div class="post-image" style="background-image: url(https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw)"></div>
+    <div class="post-image" style="background-image: url(https://w.wallhaven.cc/full/3l/wallhaven-3lrkw3.jpg)"></div>
   
 
   <!-- navbar -->
@@ -103,32 +103,23 @@
     <div class="header-content">
       <div class="post-text layout-block">
         <div class="layout-margin">
-          <h1 class="title-wrap">c++基础内容复盘</h1>
+          <h1 class="title-wrap">LearningEnglish</h1>
           <h2 class="title-sub-wrap">
             <strong>Northwood-T</strong>
             <span>发布于</span>
-            <time  class="article-date" datetime="2023-07-05T03:50:10.000Z" itemprop="datePublished">2023-07-05</time>
+            <time  class="article-date" datetime="2023-08-26T05:54:11.000Z" itemprop="datePublished">2023-08-26</time>
           </h2>
           
-            <h2 class="title-sub-wrap new-date">
-              <span>最后更新于</span>
-              <time  class="article-updated" datetime="2023-07-08T05:52:32.267Z" itemprop="dateUpdated">2023-07-08</time>
-            </h2>
           
-          
-            <h2 id="/2023/07/05/c-%E5%9F%BA%E7%A1%80%E5%86%85%E5%AE%B9%E5%A4%8D%E7%9B%98/" class="title-sub-wrap leancloud_visitors" data-flag-title="c++基础内容复盘">
+            <h2 id="/2023/08/26/LearningEnglish/" class="title-sub-wrap leancloud_visitors" data-flag-title="LearningEnglish">
               <em>文章访问量</em>
               <i class="leancloud-visitors-count"></i>
             </h2>
           
           <ul class="wrap-list dark">
   
-    <li><a href="/categories/c/">📒 c++</a></li>
-  
 </ul>
           <ul class="wrap-list dark">
-  
-    <li><a href="/tags/c-%E5%AD%A6%E4%B9%A0/">🏷️ c++学习</a></li>
   
 </ul>
         </div>
@@ -152,90 +143,14 @@
       
       
       <section class="article-entry markdown-body layout-margin content-padding--large soft-size--large soft-style--box">
-        <p><strong>前言：关于c++的基本内容，没有什么好说的，但是在个人编程练习（仅仅是基础内容，也谈不上练习 ╮(๑•́ ₃•̀๑)╭）的过程中，有一些个人遇到的问题以及相关见解，和大家分享以共勉。</strong></p>
-<span id="more"></span>
-
-<ol>
-<li>在进行c++的编写时，往往要写明头文件的引用，实例如下：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;iostream&gt;</span><br><span class="line">using namespace std;</span><br></pre></td></tr></table></figure>
-这里的iostream是标准库的名称<br>如果使用标准库，那么就要使用std（命名空间标识符）来限定（标准库在命名空间中被指定为std，所以在使用标准库时要使用std来限定）即：<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;iostream&gt;</span><br><span class="line"></span><br><span class="line">int main() </span><br><span class="line">&#123;</span><br><span class="line">	std::cout &lt;&lt; &quot;helloworld&quot; &lt;&lt; std::endl;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-如果全部使用std::则十分麻烦，若使用<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">using namespace std;</span><br></pre></td></tr></table></figure>
-意为使用<strong>C++的标准命名空间</strong>，则可以省略。</li>
-</ol>
-<p>*<del>经过实测，非标准库文件&lt;xxx.h&gt;早已不适用c++，此处便不再赘述</del></p>
-<ol start="2">
-<li><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">    system(&quot;pause&quot;)；</span><br><span class="line">    return 0；</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>是什么意思？<br>答：<br>(1).函数的一种（无参有返）<br>这里是运行主程序的意思<br>(2).如果写<br>system(“pause&gt;nul”)<br>则不会出现“请按任意键继续”<br>因为&gt;是重定向符（将输出的内容重定向到其它的设备）<br>nul 是空设备，可以把他看成批处理的“黑洞”（什么东西都可以吞下，并使之永远消失）<br>(3)return 0<br>  是代表函数运行结束的意思,即程序正常终止。(函数返回时向外部环境报告的是“是否出错”，没出错则返回0，也就是false)<br>  相反地，return 1&#x2F;return -1就是运行失败，即程序不正常终止。</p>
-</li>
-<li><p>如果想要程序循环进行，直接</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">while(1)//非零为真，无限循环</span><br></pre></td></tr></table></figure>
-<p>即可</p>
-</li>
-<li><p>随机数生成<br>(1)使用系统预设标准库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;random&gt;</span><br><span class="line">using namespace std;</span><br><span class="line"></span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">        int min = 0,max = 100;</span><br><span class="line">        random_device seed;//硬件生成随机数种子</span><br><span class="line">	ranlux48 engine(seed());//利用种子生成随机数引擎</span><br><span class="line">        uniform_int_distribution&lt;&gt; distrib(min, max);//设置随机数范围，并为均匀分布</span><br><span class="line">        int random = distrib(engine);//随机数</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>(2)时间+线性同余法<br>理解:<br>①时间一直都在变，通过算法达到伪随机的目的<br>②线性同余方法（LCG）是一种产生伪随机数的方法。<br>它是根据递归公式：RandSeed &#x3D; (A * RandSeed + B) % M<br>线性同余法最重要的是定义了三个整数，乘数 A、增量 B和模数 M，其中A, B, M是产生器设定的常数。 LCG的周期最大为 M，但大部分情况都会少于M。要令LCG达到最大周期，应符合以下条件：</p>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th align="left"></th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">B,M互质</td>
-</tr>
-<tr>
-<td align="left">M的所有质因数都能整除A-1</td>
-</tr>
-<tr>
-<td align="left">若M是4的倍数，A-1也是</td>
-</tr>
-<tr>
-<td align="left">A,B,N[0]都比M小</td>
-</tr>
-<tr>
-<td align="left">A,B是正整数</td>
-</tr>
-</tbody></table>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">#include &lt;cstdlib&gt;</span><br><span class="line">#include &lt;ctime&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int main() </span><br><span class="line">&#123;</span><br><span class="line">    srand(time(nullptr)); // 用当前时间作为种子</span><br><span class="line">    int min = 5, max = 10;</span><br><span class="line">    int randomValue = (rand() % (max - min)) + min;//范围[min,max)</span><br><span class="line">    randomValue = (rand() % (max - min + 1)) + min;//范围[min,max]</span><br><span class="line">    randomValue = (rand() % (max - min)) + min + 1;//范围(min,max]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<ol start="5">
-<li>pow(x,y)&#x3D;&#x3D;x^y</li>
-</ol>
-<p>*<del>符号^在c语言里是“按位异或”的意思。</del><br>  <del>按位异或运算 按位异或运算符“^”是双目运算符。其功能是参与运算的两数各对应的二进位相异或，当两对应的二进位相异时，结果为1</del></p>
-<ol start="6">
-<li><p>冒泡排序（适用于整数）</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/* </span><br><span class="line">排序总轮数=元素个数-1</span><br><span class="line">每轮对比次数=元素个数-排序轮数-1</span><br><span class="line"> */</span><br><span class="line">void bubble_sort(int arr[])</span><br><span class="line">&#123;</span><br><span class="line">    int len = sizeof(arr) / sizeof(arr[0]) - 1;</span><br><span class="line">    for (int i = 0; i &lt; len; i++)</span><br><span class="line">    &#123;</span><br><span class="line">        for (int j = 0; j &lt; len - i; j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if (arr[j] &lt; arr[j + 1])</span><br><span class="line">            &#123;</span><br><span class="line">                int temp = arr[j]; arr[j] = arr[j + 1]; arr[j + 1] = temp;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-</li>
-<li><p>头文件iomanip（格式化输出）</p>
-</li>
-</ol>
-<table>
-<thead>
-<tr>
-<th align="left">操控符</th>
-<th align="left">说明</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="left">setbase(n)</td>
-<td align="left">设置整数为n进制(n&#x3D;8,10,16)</td>
-</tr>
-<tr>
-<td align="left">setfill(n)</td>
-<td align="left">设置字符填充，c可以是字符常或字符变量</td>
-</tr>
-<tr>
-<td align="left">setprecision(n)</td>
-<td align="left">设置浮点数的有效数字为n位</td>
-</tr>
-<tr>
-<td align="left">setw(n)</td>
-<td align="left">设置字段宽度为n位</td>
-</tr>
-</tbody></table>
-<p>*详情请参考：<br><a target="_blank" rel="noopener" href="https://en.cppreference.com/w/cpp/io/manip">https://en.cppreference.com/w/cpp/io/manip</a></p>
+        <p><strong>2023-08-11</strong><br>peep into 偷看<br>daisy-chain雏菊花环<br>console控制台<br>correspondence信件<br>chamber会堂 接待室<br>cipher密码<br>transposition移动<br>encrypt加密<br>monoalphabetic单码加密<br>polyalphabetic使用多密码的<br>decipher破译<br>assassinate刺杀<br>concealment隐藏<br>substitution代替<br>whereby借以<br>innocuous无恶意的 无害的<br>scrutiny仔细检查<br>e.g.:They have opened their methods and data to scrutiny and invited independent measurements.<br>alienment成直线<br>dreary阴郁的<br>ponder沉思<br>lore教诲<br>nap小睡tap轻敲rap急敲<br>mutter小声抱怨<br>divulge泄露<br>fatal致命的<br>tablet药片<br>chrono时辰</p>
+<p><strong>2023-08-22</strong><br>compliment配<br>mall商场<br>safe house insurance<br>flooded<br>extensively广泛的<br>submerge淹没<br>caravan车库<br>withholding v.不给 n.缴纳税款<br>entitle是享有权利<br>bizarre奇怪的bazaar集市<br>contract合同<br>furious生气<br>so-called所谓的<br>lawsuit官司<br>I wouldn’t say that it’s good from where I‘m standing.(态度)<br>pointless<br>eventually<br>simulate模仿simulation模拟程序<br>in comparison<br>incredibly<br>there’s a benevolent（充满善意的） future with AI</p>
+<p><strong>2023-08-23</strong><br>have a moment of one’s time<br>dissertation学术论文<br>aesthetics美学<br>adhere遵守<br>philosopher<br>biography<br>parameter参考（参数）<br>manifest清楚显示(尤指情感、态度或品质)<br>cumulative<br>enrichment<br>competent<br>discourse论文<br>dominate<br>commend赞扬<br>victim<br>myth神话<br>medieval中世纪<br>distortion扭曲<br>peculiarity特殊性<br>interactive<br>equation公式<br>atomspheric<br>cardboard纸板<br>of all stripes各种各样的<br>I think it promises enrichment for any reader from those who (评价)</p>
+<p><strong>2023-08-24</strong><br>hover悬停 徘徊<br>minus减 零下<br>tip尖端<br>surge急剧上升<br>loop循坏<br>accelerate加速<br>penetrate渗透<br>overall整个<br>indigenous当地的<br>Climate scientists describe the phenonmenon as stunning.<br>Weather conditions that drive this bizarre temperature surge have visited the Arctic before.</p>
+<p>dose剂量 一份<br>fnite有限的<br>limitless<br>psychological<br>validity有效性<br>depleted耗尽<br>refueled加燃料的<br>perception<br>A good dose of willpower is often necessary to see any task.<br>My energe is depleted and I must rest to get it refueled again.</p>
+<p><strong>2023-08-25</strong><br>feature(报章、电视等的)特写，专题节目 &#x2F;&#x2F;features editor专栏编辑<br>entail需要<br>What kind of responsibilities does this job entail?<br>tangible无形的<br>incorporate包括<br>editorial<br>confession自白<br>glamorous有魅力的<br>to an extent在某种程度上<br>portray描绘<br>entry-level入门</p>
+<p><strong>2023-08-26</strong><br>icon图标<br>come up with配对</p>
+<p>Yamada ryou<br>geometric几何的<br>humanoid类人的生物<br>distribution分布<br>autonomous自主的<br>capable of 能<br>For starters, building a device capable of turning incoming photons into electricity isn’t cheap.<br>就启动装置而言，建造能吸收光子能量转变为电能的设备并不便宜。<br>in terms of在……方面<br>wontons混沌<br>herbivore食草动物</p>
 
       </section>
 
@@ -243,32 +158,16 @@
       
         <nav class="article-nav">
           
-            <div class="article-nav-item layout-padding">
-  <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
-    
-      <div class="card-cover" background-image-lazy data-img="https://imgconvert.csdnimg.cn/aHR0cDovL3N0YXRpYy53ZWJoZWsuY29tL3RlY2h1Zy91cGxvYWRzLzIwMTgvMDcvbmV3LnBuZw"></div>
-    
-    <div class="card-text">
-      
-        <a href="/2023/07/08/%E9%80%9A%E8%AE%AF%E5%BD%95%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">通讯录管理系统</h2>
-        </a>
-      
-      <div class="card-text--row">Newer</div>
-    </div>
-  </article>
-</div>
-          
           
             <div class="article-nav-item layout-padding">
   <article class="card-container article-nav-card content-padding--primary soft-size--large soft-style--box">
     
-      <div class="card-cover" background-image-lazy data-img="http://mms2.baidu.com/it/u=548854497,2649495480&amp;fm=253&amp;app=138&amp;f=JPEG&amp;fmt=auto&amp;q=75?w=274&amp;h=300"></div>
+      <div class="card-cover" background-image-lazy data-img="https://c.wallhere.com/photos/01/24/2500x1527_px_animal_ArseniXC_cat_original_Signed_sky_Tagme-1910243.jpg!d"></div>
     
     <div class="card-text">
       
-        <a href="/2023/07/04/%E4%BA%8C%E5%88%BA%E7%8C%BF%F0%9F%98%93%F0%9F%98%93/" itemprop="url">
-          <h2 class="card-text--title text-ellipsis">二刺猿😓😓</h2>
+        <a href="/2023/07/16/%E8%BF%87%E5%8E%BB%E7%9A%84%E5%91%8A%E5%88%AB/" itemprop="url">
+          <h2 class="card-text--title text-ellipsis">过去的告别</h2>
         </a>
       
       <div class="card-text--row">Older</div>
