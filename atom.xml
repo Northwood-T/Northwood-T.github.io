@@ -6,7 +6,7 @@
   <link href="https://northwood-t.github.io/atom.xml" rel="self"/>
   
   <link href="https://northwood-t.github.io/"/>
-  <updated>2023-09-18T10:59:16.649Z</updated>
+  <updated>2023-09-18T11:03:59.517Z</updated>
   <id>https://northwood-t.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://northwood-t.github.io/2023/09/18/%E2%80%9820230918%E2%80%99/"/>
     <id>https://northwood-t.github.io/2023/09/18/%E2%80%9820230918%E2%80%99/</id>
     <published>2023-09-18T10:30:18.000Z</published>
-    <updated>2023-09-18T10:59:16.649Z</updated>
+    <updated>2023-09-18T11:03:59.517Z</updated>
     
-    <content type="html"><![CDATA[<p><a href="https://www.runoob.com/cprogramming/c-function-printf.html">printf函数的使用</a></p><p><a href="https://www.runoob.com/cprogramming/c-function-scanf.html">scanf函数的使用</a></p><p><a href="https://blog.csdn.net/weixin_46438908/article/details/113731051">scanf函数参数什么时候要加&amp;符号①</a></p><p> <a href="https://www.zhihu.com/question/264695584">scanf函数参数什么时候要加&amp;符号①</a></p><p><a href="https://blog.csdn.net/Darlingrex/article/details/115335162">C语言用printf和scanf函数输入输出double类型</a></p><p><a href="https://blog.csdn.net/weixin_45031801/article/details/127252092?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169503467116800180689234%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=169503467116800180689234&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-127252092-null-null.142%5Ev94%5EchatsearchT3_1&utm_term=getchar&spm=1018.2226.3001.4187">getchar函数及原理详解</a></p><p><a href="https://blog.csdn.net/henu1710252658/article/details/83040281">EOF的意义及用法</a></p>]]></content>
+    <content type="html"><![CDATA[<p><a href="https://www.runoob.com/cprogramming/c-function-printf.html">printf函数的使用</a></p><p><a href="https://www.runoob.com/cprogramming/c-function-scanf.html">scanf函数的使用</a></p><p><a href="https://blog.csdn.net/weixin_46438908/article/details/113731051">scanf函数参数什么时候要加&amp;符号①</a></p><p> <a href="https://www.zhihu.com/question/264695584">scanf函数参数什么时候要加&amp;符号②</a></p><p><a href="https://blog.csdn.net/Darlingrex/article/details/115335162">C语言用printf和scanf函数输入输出double类型</a></p><p><a href="https://blog.csdn.net/weixin_45031801/article/details/127252092?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522169503467116800180689234%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=169503467116800180689234&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-127252092-null-null.142%5Ev94%5EchatsearchT3_1&utm_term=getchar&spm=1018.2226.3001.4187">getchar函数及原理详解</a></p><p><a href="https://blog.csdn.net/henu1710252658/article/details/83040281">EOF的意义及用法</a></p>]]></content>
     
     
       
